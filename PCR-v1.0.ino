@@ -2,7 +2,7 @@
   变性的温度下限tp1min，温度上限tp1max，时间time1。
   退火的温度下限tp2min，温度上限tp2max，时间time2。
   延伸的温度下限tp3min，温度上限tp3max，时间time3。
-（以上数据温度单位为℃,时间单位为S）
+（以上数据温度单位为℃,时间单位为s）
 
 循环次数times。*/
 #include<Keypad.h> // 键盘度库函数
@@ -136,7 +136,7 @@ void UpdateDisplay()
     display.println(" C");
     display.print("time1:");
     display.print(time1);
-    display.println(" S");
+    display.println(" s");
   }
   break;
 
@@ -152,7 +152,7 @@ void UpdateDisplay()
     display.println(" C");
     display.print("time2:");
     display.print(time2);
-    display.println(" S");
+    display.println(" s");
   }
   break;
 
@@ -167,7 +167,7 @@ void UpdateDisplay()
     display.println(" C");
     display.print("time3:");
     display.print(time3);
-    display.println(" S");
+    display.println(" s");
   }
   break;
 
@@ -176,7 +176,7 @@ void UpdateDisplay()
     display.println("Done!");
     display.print("Work time:");
     display.print((millis() - timestand) / 1000);
-    display.println(" S");
+    display.println(" s");
     display.print("Temperature:");
     display.print(tp);
     display.println(" C");
@@ -191,7 +191,7 @@ void UpdateDisplay()
   display.println(cycle_index);
   display.print("Work time:");
   display.print((millis() - timestand) / 1000);
-  display.println(" S");
+  display.println(" s");
   display.print("Temperature:");
   display.print(tp);
   display.println(" C");
